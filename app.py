@@ -11,6 +11,16 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/web-projects')
+@app.route('/web-projects.html')
+def web_projects():
+    """
+    serve webpage
+    """
+    return render_template('web-projects.html')
+
+
+
 if __name__ == '__main__':
     """
     handle website

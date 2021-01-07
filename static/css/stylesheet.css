@@ -11,7 +11,7 @@ html, body {
 
 body {
 	background-color: rgb(250, 250, 250);
-	padding-bottom: 50px; /* for footer adjustment */
+	padding-bottom: 40px; /* for footer adjustment */
 	position:relative;
 }
 
@@ -20,7 +20,7 @@ header {
 	height: 70px;
 	width: 100%;
 	border-bottom: 2px solid rgb(219, 229, 230);
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 
 }
 
@@ -115,6 +115,7 @@ footer .copyright {
 }
 
 .main-wrapper {
+	padding-top: 30px;
 	width: 90%;
 	margin: 0 auto;
 	overflow: hidden;
@@ -244,6 +245,43 @@ footer .copyright {
 }
 
 
+.our-values-list {
+	margin: auto;
+	padding: 50px;
+	width: 100%;
+}
+
+.project-types-cards li {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	background-color: white;
+	box-shadow: 20px 15px 45px rgba(0, 0, 0, 0.4);
+	text-align: center;
+	display: inline-block;
+	transition-duration: 0.35s;
+}
+
+
+.project-types-cards li:hover, .project-types-cards li a:hover {
+	background-color: #840152;
+	transform: scale(1.1);
+
+}
+
+.project-types-cards li a {
+	text-decoration: none;
+	color: #b90074;
+}
+.project-types-cards li a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.project-types-cards i {
+	font-size: 2.5em;
+	padding-bottom: 16px;
+}
+
 
 @keyframes bouncy {
 	0%{top:0em}
@@ -273,3 +311,21 @@ footer .copyright {
 	}
 }
 
+
+@media only screen and (min-height: 746px) {
+	.bg-container {
+		padding-bottom: 70px;
+	}
+
+
+@media only screen and (min-height: 816px) {
+	.bg-container {
+		padding-top: 20px;
+		padding-bottom: 120px !important;
+	}
+	.projects-header h1 {
+		font-size: 4em;
+	}
+	.projects-header h4 {
+		font-size: 2.3em;	
+	}
