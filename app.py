@@ -20,6 +20,15 @@ def web_projects():
     return render_template('web-projects.html')
 
 
+@app.route('/games-dev')
+@app.route('/games-dev.html')
+def games():
+    """
+    serve webpage
+    """
+    return render_template('games-dev.html')
+
+
 
 if __name__ == '__main__':
     """
