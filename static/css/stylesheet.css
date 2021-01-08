@@ -78,10 +78,14 @@ footer .copyright {
 }
 
 
-.comics-bg:before {
+.games-bg {
+	position: relative;
+}
+.games-bg:before {
+	/* overlay */
 	content: "";
-	background: rgba(39,62,84);
-	opacity: 0.1;
+	background: rgba(255,255,255);
+	opacity: 0.4;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -90,11 +94,11 @@ footer .copyright {
 	z-index: -2;
 }
 
-.comics-bg:after {
+.games-bg:after {
 	content: "";
-	background: url('../img/bg/comics.jpg');
-	background-position: left center;
-	opacity: 0.1;
+	background: url('../img/bg/mario.jpg');
+	background-position: right center;
+	background-size: cover;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -201,6 +205,15 @@ footer .copyright {
 .project-buttons-div {
 	position: absolute;
 	bottom: 20px;
+}
+
+.games-buttons-div {
+	margin: 0 auto;
+	width: fit-content;
+	position: absolute;
+	bottom: 20px;
+	left: 0px;
+	right: 0px;
 }
 
 /* overwrite bootstrap primary button color attributes */
