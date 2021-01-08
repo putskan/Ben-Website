@@ -245,12 +245,22 @@ footer .copyright {
 }
 
 
-.our-values-list {
+@keyframes bouncy {
+	0%{top:0em}
+	40%{top:0em}
+	43%{top:-0.8em}
+	46%{top:0em}
+	48%{top:-0.4em}
+	50%{top:0em}
+	100%{top:0em;}
+}
+
+/*.our-values-list {
 	margin: auto;
 	padding: 50px;
 	width: 100%;
 }
-
+*/
 .project-types-cards li {
 	padding-top: 30px;
 	padding-bottom: 20px;
@@ -283,15 +293,20 @@ footer .copyright {
 }
 
 
-@keyframes bouncy {
-	0%{top:0em}
-	40%{top:0em}
-	43%{top:-0.8em}
-	46%{top:0em}
-	48%{top:-0.4em}
-	50%{top:0em}
-	100%{top:0em;}
+.fade-in-effect {
+	display: inline-block;
+    opacity: 0;
+    -webkit-transform: scale(2.2);
+    -moz-transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -o-transform: scale(2.2);
+    transform: scale(2.2);
+    -webkit-transition: opacity .5s ease-out, -webkit-transform .5s ease-out;
+    -moz-transition: opacity .5s ease-out, -moz-transform .5s ease-out;
+    -o-transition: opacity .5s ease-out, -o-transform .5s ease-out;
+    transition: opacity .5s ease-out, transform .5s ease-out;
 }
+
 
 @media only screen and (min-width: 768px) {
 	.project-list {

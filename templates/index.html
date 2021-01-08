@@ -10,7 +10,7 @@
 		<!-- bootstrap related - latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 		<!-- website-specific css & js -->
-		<script src="{{ url_for('static', filename='js/script.js') }}" crossorigin="anonymous"></script>
+		<script src="{{ url_for('static', filename='js/script.js') }}" crossorigin="anonymous" defer></script>
 		<link href="{{ url_for('static', filename='css/stylesheet.css') }}" rel="stylesheet" type="text/css" >
 		<!-- bootstrap related - jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -31,10 +31,18 @@
 			</h3>
 		<!--<nav class=""></nav> -->
 		</header>
-		<div class="bg-container purple-bg-1 pb-3">
+		<div class="bg-container purple-bg-1 pb-3 shadow-lg">
 			<div class="main-wrapper">
 				<div class="projects-header text-center text-white row justify-content-center">
-					<h1 class="col-12 col-sm-12">Welcome</h1>
+					<h1 class="col-12 col-sm-12">
+						   <span class="fade-in-effect" style="transition-delay: 700ms;">W</span><!--
+						--><span class="fade-in-effect" style="transition-delay: 500ms;">e</span><!--
+						--><span class="fade-in-effect" style="transition-delay: 150ms;">l</span><!--
+						--><span class="fade-in-effect" style="transition-delay: 300ms;">c</span><!--
+						--><span class="fade-in-effect" style="transition-delay: 800ms;">o</span><!--
+						--><span class="fade-in-effect" style="transition-delay: 550ms;">m</span><!--
+						--><span class="fade-in-effect" style="transition-delay: 100ms;">e</span>
+					</h1>
 					<h4 class="pt-3 col-12 col-sm-12 col-md-10 col-lg-4">Take a look at some of my projects</h4>
 				</div>
 				<ul id="index-project-types-container" class="project-types-cards row justify-content-center my-5">
@@ -58,7 +66,7 @@
 				</ul>
 			</div>
 		</div>
-		<footer class="purple-bg-1 text-white rounded-0 border-top border-light">
+		<footer class="purple-bg-1 text-white rounded-0 shadow-lg">
 			<p class="copyright">© 2020 Copyright:
 				<a class="" href="https://www.linkedin.com/in/ben-lahav-018450148/" target="_blank"> Ben Lahav</a>
 			</p>
