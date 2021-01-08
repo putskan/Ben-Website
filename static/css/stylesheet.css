@@ -73,19 +73,15 @@ footer .copyright {
 	background-color: #900059 /*#aa0069*/
 }
 
-.comics-bg {
-	position: relative;
-}
-
-
 .games-bg {
 	position: relative;
 }
+
 .games-bg:before {
 	/* overlay */
 	content: "";
 	background: rgba(255,255,255);
-	opacity: 0.4;
+	opacity: 0.6;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -296,8 +292,7 @@ footer .copyright {
 }
 
 .games-wrapper {
-	max-width: 324px;
-	margin: 0 auto;
+	width: 100%;
 }
 
 .project-types-cards li {
@@ -350,6 +345,9 @@ footer .copyright {
 	margin-bottom: 20px;
 }
 
+.game-card {
+	width: 300px;
+}
 
 .game-title-bar {
 	height: 50px;
@@ -377,7 +375,7 @@ footer .copyright {
 	-moz-box-shadow: 0px 16px 46px -19px rgba(0,0,0,1);
 	box-shadow: 0px 16px 46px -19px rgba(0,0,0,1);
 	padding-bottom: 90px;
-	min-height: 480px;
+	height: 530px;
 }
 
 .game-content:after {
@@ -450,7 +448,14 @@ footer .copyright {
 	border-radius: 4px;
 	border: 1px solid #DCA03B;
 	box-shadow: 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 1px rgba(0,0,0,0.21);
-}  
+}
+
+.game-video {
+	position: absolute;
+	bottom: 100px;
+	right: 20px;
+	left: 20px;
+}
 
 
 @media only screen and (min-width: 768px) {

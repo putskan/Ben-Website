@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Games | Ben's Website</title>
+		<link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.ico') }}"/>		
+		<!-- mobile compatibility -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- styles -->
+		<!-- bootstrap related - latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<!-- Font Awesome -->
+		<link href="{{ url_for('static', filename='font-awesome/css/all.css') }}" rel="stylesheet" type="text/css" >
+		<!-- website-specific css & js -->
+		<script src="{{ url_for('static', filename='js/script.js') }}" crossorigin="anonymous" defer></script>
+		<link href="{{ url_for('static', filename='css/stylesheet.css') }}" rel="stylesheet" type="text/css" >
+		<!-- bootstrap related - jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
+		<script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js"></script>
+		<!-- bootstrap related - Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<!-- bootstrap related - Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<a href="./index.html" style="color: unset; cursor: pointer;">
+				<h3 class="d-inline font-italic logo">
+					<span class="purple-color-1 font-weight-bold">&lt;</span>Ben's Site<span class="purple-color-1 font-weight-bold">&gt;</span>
+				</h3>
+			</a>
+		</header>
+		<div class="bg-container games-bg pb-3 shadow-lg">
+			<div class="main-wrapper">
+				<div class="projects-header text-center">
+					<h1 style="display: inline-block;">Games</h1>
+					<img class="paper-plane" src="{{ url_for('static', filename='img/PaperPlane/32x32.png') }}" style="display: inline-block;">
+					<h4 class="pt-3">Check out some of <br> these <span class="purple-color-1">games<span>!</h4>
+				</div>
+
+				<div class="games-wrapper pt-4 mt-5 row justify-content-center">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+						<div id="lollibird" class="game-card mb-5 mx-auto">
+							<div class="game-title-bar purple-bg-1 rounded-top">
+								<div class="row justify-content-between">
+									<h3 class="col-5 col-sm-5 m-2 px-4" style="color: ivory">LolliBird</h3>
+									<div id="lollibird-icon" class="game-icon col-3 col-sm-3 m-2">
+									</div>
+								</div>
+							</div>
+							<div class="game-content px-4 pt-4">
+								<p><b>LolliBird</b> - A casual multiplayer game, inspired by the <i>"British Bulldog"</i> game.<br>What are you waiting for? Choose a team and catch your friends!<br></p>
+								<div class="game-tags-wrapper pt-2 pb-4">
+									<div class="game-tag">Computer Networks</div>
+									<div class="game-tag">WebSockets</div>
+									<div class="game-tag">Docker</div>
+									<div class="game-tag">OOP</div>
+									<div class="game-tag">GdScript</div>
+									<div class="game-tag">Extrapolation</div>
+									<div class="game-tag">Interpolation</div>
+								</div>
+								<div class="row game-video">
+									<div class="col">
+										<iframe style="display:block; width: 100%; height: 100%;" src="https://www.youtube.com/embed/HKLVbwL6wdb8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+								<div class="games-buttons-div">
+									<a target="_blank" class="btn btn-primary bouncy mr-2 px-3" href="https://lollibird.herokuapp.com/">
+										Play!
+									</a>
+									<a target="_blank" class="btn btn-outline-primary bouncy" style="animation-delay: 0.07s" href="https://github.com/putskan/LolliBird">
+										GitHub
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+						<div id="sugarboy" class="game-card mb-5 mx-auto">
+							<div class="game-title-bar purple-bg-1 rounded-top">
+								<div class="row justify-content-between">
+									<h3 class="col-5 col-sm-5 m-2 px-4" style="color: ivory">SugarBoy</h3>
+									<div id="sugarboy-icon" class="game-icon col-3 col-sm-3 m-2">
+									</div>
+								</div>
+							</div>
+							<div class="game-content px-4 pt-4">
+								<p><b>SugarBoy</b> - A mini-game created for self-learning purposes. <br>Face obstacles & eat all the chocolate bars all the way to the trophy!</p>
+								<div class="game-tags-wrapper pt-2 pb-4">
+									<div class="game-tag">Godot</div>
+									<div class="game-tag">GdScript</div>
+									<div class="game-tag">OOP</div>
+								</div>
+								<div class="row game-video">
+									<div class="col">
+										<iframe style="display:block; width: 100%; height: 100%;" src="https://www.youtube.com/embed/HKLVbwL6wb8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+								<div class="games-buttons-div">
+									<a target="_blank" class="btn btn-outline-primary bouncy" style="animation-delay: 0.07s" href="https://github.com/putskan/Sugarboy">
+										GitHub
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="purple-bg-1 text-white shadow-lg">
+			<p class="copyright">© 2020 Copyright:
+				<a class="" href="https://www.linkedin.com/in/ben-lahav-018450148/" target="_blank"> Ben Lahav</a>
+			</p>
+		</footer>
+	</body>
+</html>
