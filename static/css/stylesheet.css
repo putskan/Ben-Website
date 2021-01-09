@@ -20,8 +20,6 @@ header {
 	height: 70px;
 	width: 100%;
 	border-bottom: 2px solid rgb(219, 229, 230);
-	/*margin-bottom: 30px;*/
-
 }
 
 header .logo {
@@ -64,24 +62,18 @@ footer .copyright {
 }
 
 .purple-color-1 {
-	/*color: #ac006b;*/
-	/*color: #bc0f7b;*/
 	color: #b90074;
 }
 
 .purple-bg-1 {
-	background-color: #900059 /*#aa0069*/
-}
-
-.games-bg {
-	position: relative;
+	background-color: #900059
 }
 
 .games-bg:before {
 	/* overlay */
 	content: "";
 	background: rgba(255,255,255);
-	opacity: 0.6;
+	opacity: 0.7;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -92,9 +84,9 @@ footer .copyright {
 
 .games-bg:after {
 	content: "";
-	background: url('../img/bg/mario.jpg');
-	background-position: right center;
+	background: url('../img/bg/mario - edited.jpg');
 	background-size: cover;
+	opacity: 0.9;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -102,6 +94,34 @@ footer .copyright {
 	position: absolute;
 	z-index: -3;
 }
+
+.websites-bg:before {
+	/* overlay */
+	content: "";
+	background: rgba(255,255,255);
+	opacity: 0.2;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -2;
+}
+
+.websites-bg:after {
+	content: "";
+	background: url('../img/bg/glasses.jpg');
+	background-position: center top;
+	background-size: cover;
+	opacity: 1;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -3;
+}
+
 
 .project {
 	position: relative;
@@ -292,7 +312,7 @@ footer .copyright {
 }
 
 .games-wrapper {
-	width: 100%;
+	margin: 0 auto;
 }
 
 .project-types-cards li {
@@ -346,7 +366,7 @@ footer .copyright {
 }
 
 .game-card {
-	width: 300px;
+	width: 270px;
 }
 
 .game-title-bar {
@@ -375,7 +395,7 @@ footer .copyright {
 	-moz-box-shadow: 0px 16px 46px -19px rgba(0,0,0,1);
 	box-shadow: 0px 16px 46px -19px rgba(0,0,0,1);
 	padding-bottom: 90px;
-	height: 530px;
+	height: 600px;
 }
 
 .game-content:after {
@@ -456,6 +476,19 @@ footer .copyright {
 	right: 20px;
 	left: 20px;
 }
+
+
+@media only screen and (min-width: 350px) {
+	.game-card {
+		width: 300px;
+	}
+	.game-content {
+		height: 530px;
+	}
+
+
+}
+
 
 
 @media only screen and (min-width: 768px) {
