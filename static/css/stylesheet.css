@@ -363,7 +363,7 @@ footer .copyright {
 .paper-plane {
 	margin-left: 12px;
 	margin-bottom: 20px;
-	animation-name: fly;
+	animation-name: fly;	
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
 	animation-fill-mode: backwards;
@@ -405,6 +405,20 @@ footer .copyright {
 	animation-timing-function: linear;
 }
 
+@keyframes move-game-icon {
+	0% {margin-right: 0px;}
+	33% {margin-right: 80px;}
+	100% {margin-right: 0px;}
+}
+
+@keyframes flip-lollibird {
+	0%   {transform: scale(-0.9, 1);}
+	32.99%   {transform: scale(-0.9, 1);}
+	33%  {transform: scale(0.9, 1);}
+	99.99%  {transform: scale(0.9, 1);}
+	100% {transform: scale(-0.9, 1);}
+}
+
 #sugarboy-icon {
 	background-image: url('../img/games/sugarboy.gif');
 	transform: scale(-1.2, 1.2);
@@ -420,19 +434,6 @@ footer .copyright {
 	background-size: contain;
 }
 
-@keyframes move-game-icon {
-	0% {margin-right: 0px;}
-	33% {margin-right: 80px;}
-	100% {margin-right: 0px;}
-}
-
-@keyframes flip-lollibird {
-	0%   {transform: scale(-0.9, 1);}
-	32.99%   {transform: scale(-0.9, 1);}
-	33%  {transform: scale(0.9, 1);}
-	99.99%  {transform: scale(0.9, 1);}
-	100% {transform: scale(-0.9, 1);}
-}
 
 .game-content {
 	position: relative;
