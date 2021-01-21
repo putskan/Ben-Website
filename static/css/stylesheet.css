@@ -195,17 +195,17 @@ footer .copyright {
 
 .css::after {
 	content: "CSS";
-	color: #005bbc;
+	color: #0c9fb6;
 }
 
 .bootstrap::after {
 	content: "Bootstrap";
-	color: #0c9fb6;
+	color: #6a00ba;
 }
 
 .js::after {
 	content: "JavaScript";
-	color: #dc3545;
+	color: #ff0018;
 }
 
 .python::after {
@@ -216,6 +216,11 @@ footer .copyright {
 .sql::after {
 	content: "SQL";
 	color: #007bff;
+}
+
+.typescript::after {
+	content: "TypeScript";
+	color: #005bbc;
 }
 
 .project-buttons-div {
